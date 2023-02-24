@@ -6,7 +6,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../styles/App.css';
 const App = () => {
 
-  let [el, setEl] = useState("");
+  let [el, setEl] = useState("Inbox");
   return (
     <div id="main">
     <Header />
