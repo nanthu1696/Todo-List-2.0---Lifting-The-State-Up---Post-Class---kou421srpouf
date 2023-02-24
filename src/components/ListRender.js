@@ -1,6 +1,11 @@
 import React from "react";
 
 const ListRender = (props) => {
+  if ( list === "")
+  {
+     return " ";
+  }
+  else{
   return (
     <>
       {props.list.map((list) => {
@@ -11,6 +16,7 @@ const ListRender = (props) => {
             </div>
           </div>
         );
+}
       })}
     </>
   );
