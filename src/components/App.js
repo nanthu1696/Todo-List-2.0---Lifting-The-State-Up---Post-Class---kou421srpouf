@@ -6,16 +6,16 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../styles/App.css';
 const App = () => {
 
-
+  let [el, setEl] = useState("");
   return (
     <div id="main">
     <Header />
       <div className='row'>
         <div className='col-md-2'>
-          <SideNav change={}/>
+          <SideNav change={setEl}/>
         </div>
         <div className='col-md-10'>
-          <MainSection active = {}/>
+          <MainSection active = {el}/>
         </div>
       </div>
     </div>
