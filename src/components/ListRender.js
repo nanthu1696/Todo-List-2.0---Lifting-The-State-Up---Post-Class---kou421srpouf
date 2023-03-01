@@ -1,7 +1,7 @@
 import React from "react";
 
 const ListRender = (props) => {
-  let arr = "``";
+  let arr = "b";
   return (
     <>
       {props.list.map((list) => {
