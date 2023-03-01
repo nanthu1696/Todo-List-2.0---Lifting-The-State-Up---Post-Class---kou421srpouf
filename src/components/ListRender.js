@@ -1,10 +1,8 @@
 import React from "react";
 
 const ListRender = (props) => {
-  let arr = "b";
   return (
     <>
-    Empty
       {props.list.map((list) => {
       if ( list === "")
       {
@@ -14,7 +12,7 @@ const ListRender = (props) => {
         return (
           <div className="box" key={list.number}>
             <div className="task">
-              {list.title === "" ? arr : list.title} ({list.date.toLocaleDateString()})
+              {list.title} ({list.date.toLocaleDateString()})
             </div>
           </div>
         );
