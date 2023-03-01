@@ -4,6 +4,7 @@ const ListRender = (props) => {
   let arr = "b";
   return (
     <>
+    Empty
       {props.list.map((list) => {
       if ( list === "")
       {
