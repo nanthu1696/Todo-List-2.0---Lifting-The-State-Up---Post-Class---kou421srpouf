@@ -6,12 +6,12 @@ const Inbox = (props) => {
   let [newTask, setnewTask] = useState(false);
   function createObj(event) {
     event.preventDefault();
-//     let title = tit.current.value;
-//     let date = new Date(dat.current.value);
-//     let obj = { title: title, date: date };
-//     let arr = [...props.list, obj];
-//     console.log(arr);
-//     props.append(arr);
+    let title = tit.current.value;
+    let date = new Date(dat.current.value);
+    let obj = { title: title, date: date };
+    let arr = [...props.list, obj];
+    console.log(arr);
+    props.append(arr);
     setnewTask(false);
   }
   return (
