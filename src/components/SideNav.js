@@ -4,7 +4,7 @@ import "../styles/App.css";
 
 const SideNav = (props) => {
 
-
+  console.log("props for sidenav" , props);
 
   return (
     <ul className="side-nav">
