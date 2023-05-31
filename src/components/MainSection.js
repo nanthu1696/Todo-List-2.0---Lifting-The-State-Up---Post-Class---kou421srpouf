@@ -11,6 +11,8 @@ const list = [
 
 const MainSection = (props) => {
   let [todo, setTodo] = useState(list);
+  console.log("list inside the main section" , list);
+  console.log("props inside main section", props);
   return (
     <div className="main-section">
       {props.active === "INBOX" && <Inbox list={todo} append={setTodo} />}
